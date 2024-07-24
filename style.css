@@ -1,0 +1,176 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+
+
+/* shared styles */
+
+
+
+
+/* header styles */
+.header{
+    position: relative;
+    background-image: url('images/banner.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    background-size: cover;
+    
+}
+.header-box-info2{
+    position: absolute;
+    height: 100px;
+    width:120px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    top: 200px;
+    left:800px;
+
+}
+.header-box-info2 h1,p{
+    color:white;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+
+
+/* nav styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(77, 73, 73);
+    color: white;
+    padding: 0 20px;
+}
+
+.navbar ul{
+    box-sizing: border-box;
+    display: flex;
+
+}
+.navbar ul:hover{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding:4px 0px;
+
+}
+
+
+.navbar li {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0 15px;
+}
+.navbar li > a:hover {
+    background-color: white;
+    color: black;
+    padding: 4px 0px;
+    border-radius: 8px;
+}
+
+.navbar li > a {
+    text-decoration: none;
+    color: white;
+}
+.menubar{
+    display: none;
+}
+
+/* Main styles here  */
+
+main > section{
+    margin-top: 99px;
+}
+
+section{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+/* flower section styles here  */
+
+.grid-img-container h1, p{
+    color: rgb(56, 50, 50);
+    text-align: center;
+}
+.flower-items-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+}
+.flower-img-item img{
+    width:100%;
+    box-shadow: 2px 2px 6px gray;
+    border-radius: 60% 60% 20% 20%;
+}
+
+
+
+/* help image div  */
+.help-img-div{
+    max-width: 900px;
+    height:440px;
+    border: 2px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/banner.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+}
+.help-img-div input{
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Responsive media  */
+
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 9px;
+    }
+    .navbar ul{   
+        display: none;
+    } 
+    .menubar{
+        display:initial;
+        color: white;
+    }
+    .menubar p{
+        display:initial;
+        color: white;
+    }
+    .header-box-info2{
+        top:200px;
+        left:350px;
+    }
+    
+}
