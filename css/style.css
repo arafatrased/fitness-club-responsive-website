@@ -49,7 +49,7 @@ body{
     list-style: none;
     font-weight: 500;
     font-size: 1rem;
-    padding: 9px 30px;
+    padding: 14px 40px;
     text-align: center;
     border: none;
     color:white;
@@ -63,7 +63,7 @@ body{
     margin-left: 18px;
     font-weight: 500;
     font-size: 1rem;
-    padding: 9px 30px;
+    padding: 14px 40px;
     text-align: center;
     color:white;
 }
@@ -75,7 +75,7 @@ body{
     margin-left: 18px;
     font-weight: 500;
     font-size: 1rem;
-    padding: 9px 30px;
+    padding: 14px 40px;
     text-align: center;
     color:white;
 }
@@ -330,6 +330,7 @@ main > section{
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(14, 1fr);
+    margin-bottom: 100px;
     
 }
 
@@ -437,4 +438,85 @@ main > section{
 }
 .training-img-6 p{
     margin: 0 0 25px 30px;
+}
+
+/* BMI Calculator section starts  */
+
+.bmi-calculator-section{
+    max-width: 1440px;
+    margin-top: 100px;
+    margin: 0 auto;
+    background: rgb(34, 34, 34);
+
+}
+.bmi-calculator-container{
+    display: flex;
+    gap:120px;
+    max-width: 1060px;
+    margin: 0 auto;
+    color:white;
+}
+.bmi-calculator-chart{
+    width: 45%;
+}
+.bmi-calculator-description{
+    color:rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+.bmi-title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    margin-top: 40px;;
+}
+.bmi-table{
+    border-collapse: collapse;
+}
+td, th{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: start;
+    padding: 15px;
+    border: 1px solid rgb(141, 138, 138, 0.5);
+}
+th{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.calculator-input-div{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 20px;
+    gap: 14px;
+    
+}
+.calculator-input-div input{
+    padding: 15px 18px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.5);
+
+}
+.calculator-input-div input:focus{
+    color:rgba(255, 255, 255);
+}
+
+.inp-5{
+    grid-column: 1/ span 2;
+}
+.bmi-calculator > button{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* footer section styles  */
+footer{
+    height: 100px;
 }
