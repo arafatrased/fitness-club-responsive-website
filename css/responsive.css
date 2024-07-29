@@ -1,0 +1,87 @@
+/* Responsive media  */
+
+
+/* Responsiveness for small devices */
+
+
+@media screen and (max-width:576px) {
+    .section-title{
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .section-description{
+        max-width: 670px;
+        margin: 5px;
+    }
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 9px;
+    }
+    .banner-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap:10px;
+        justify-items: center;
+        height: 950px;
+    }
+    .banner-content{
+        height: 350px;
+        margin-left: 15px;
+    }
+    .banner-img{
+        margin-right: 0px;
+    }
+    .banner-btns{
+        justify-content: space-evenly;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+    .navbar > ul{
+        display: none;
+    }
+    .menubar{
+        display: initial;
+    }
+    .habit-img-container, .run-extra-mile-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .run-extra-mile-container{
+        gap: 20px;
+        grid-template-areas: "extra-mile-content" "extra-mile-img";
+    }
+    .extra-mile-content{
+        text-align: center;
+    }
+    .training-img-container{
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        
+    }
+    .training-img-3{
+        display: none;
+    }
+    .training-img-6{
+        display: none;
+    }
+    .training-img-1{
+        grid-column: 1/ span 5;
+        grid-row: 1/ span 7;
+    }
+    .training-img-2{
+        grid-column: 6/ span 11;
+        grid-row: 1/ span 7;
+    }
+    .training-img-4{
+        grid-column: 1/ span 6;
+        grid-row: 8/ span 7;
+    }
+    .training-img-5{
+        grid-column: 7/ span 11;
+        grid-row: 8/ span 7;
+    }
+
+}
+
+
