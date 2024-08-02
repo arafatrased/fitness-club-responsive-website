@@ -38,11 +38,55 @@
         font-size: 2.5rem;
         line-height: 40px;
     }
+    .videos-title{
+        margin-top: 5px;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+    .videos-tutorial-title{
+        margin-top: 5px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        color:white;
+    }
+    .workout-tutorials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        bottom:80px;
+        left: -5px;
+        text-align: center;
+        position: absolute;
+        max-width: 200px;
+        max-height: 80px;
+        padding:5px;
+    }
     .navbar > ul{
         display: none;
     }
     .menubar{
         display: initial;
+    }
+    .btn-primary{
+        background-color: rgba(230, 83, 60, 1);
+        border-radius: 39px;
+        list-style: none;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 14px 40px;
+        text-align: center;
+        border: none;
+        color:white;
+    }
+    
+    .btn-secondary{
+        margin-left: 18px;
+        padding: 14px 20px;
+    }
+    .btn-secondary:hover{
+        margin-left: 18px;
+        padding: 14px 20px;
     }
     .habit-img-container, .run-extra-mile-container{
         grid-template-columns: repeat(1, 1fr);
@@ -81,6 +125,30 @@
         grid-column: 7/ span 11;
         grid-row: 8/ span 7;
     }
+    .bmi-calculator-container{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin: 0 15px;
+
+    }
+    .bmi-calculator-chart{
+        width: 100%;
+    }
+    .team-members{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-content-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 9px;
+        gap: 9px;
+        grid-template-areas: "footer-fitness" "our-services" "Engagements" ;
+    }
+    .footer-section-description{
+        text-align: none;
+    }
+    
 
 }
 
