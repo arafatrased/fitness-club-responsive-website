@@ -7,9 +7,7 @@
     margin: 0;
     padding:0; 
 }
-.hide{
-    display: none;
-}
+
 body{
     max-width: 1440px;
     margin:0 auto;
@@ -79,7 +77,11 @@ body{
     color:white;
 }
 
+
 /* header styles */
+
+
+
 header{ 
     max-width: 1440px; 
     background-image: linear-gradient(180deg, rgb(30, 30, 30), rgba(80, 79, 79, 0.5), rgb(5, 5, 5));
@@ -94,6 +96,8 @@ header{
 
 
 /* nav styles */
+
+
 
 .navbar{
     display: flex;
@@ -149,7 +153,10 @@ header{
     width: 50%;
 }
 
+
+
 /* Banner styles begins */
+
 
 .banner-container{
     box-sizing: border-box;
@@ -186,9 +193,6 @@ header{
 }
 .banner-img{
     position: relative;
-    /* height: 580px; */
-    /* margin-right: 5px; */
-
 }
 
 .banner-img img{
@@ -261,6 +265,8 @@ main{
 
 /* change Your Habit styles */
 
+
+
 .habit-change-container{
     display: flex;
     flex-direction: column;
@@ -290,6 +296,8 @@ main{
 }
 
 /* Run extra mile section styles */
+
+
 .run-extra-mile-container{
     max-width: 1060px;
     margin: 0 auto;
@@ -450,6 +458,55 @@ main{
     margin: 0 0 25px 30px;
 }
 
+
+/* benefits info box styles  */
+
+.benefits-section-container h1{
+    text-align: center;
+}
+.benefit-description{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    max-width: 670px;
+    text-align: center;
+}
+
+.benefit-info-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1060px;
+    margin: auto;
+}
+
+.info-box {
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(88, 88, 88, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+}
+
+.info-box h2 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+
 /* BMI Calculator section starts  */
 
 
@@ -603,7 +660,9 @@ th{
     min-width: 300px;
 }
 
+
 /* Team section styles */
+
 
 .team-container{
     max-width: 1060px;
@@ -852,49 +911,3 @@ th{
 
 
 
-/* benefits info box sttyyles  */
-
-.benefits-section-container h1{
-    text-align: center;
-}
-.benefit-description{
-    color: rgba(255, 255, 255, 0.5);
-    margin: 0 auto;
-    font-size: 0.9rem;
-    margin-bottom: 40px;
-    max-width: 670px;
-    text-align: center;
-}
-
-.benefit-info-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1060px;
-    margin: auto;
-}
-
-.info-box {
-    background-color: rgb(34, 34, 34);
-    padding: 20px;
-    border: 2px solid rgb(255, 255, 255, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(88, 88, 88, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.info-box:hover {
-    transform: translateY(-4px);
-}
-
-.info-box h2 {
-    color: white;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-.info-box p {
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 1.6;
-}
